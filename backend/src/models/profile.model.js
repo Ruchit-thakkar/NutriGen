@@ -53,5 +53,5 @@ const profileSchema = new mongoose.Schema(
   },
   { timestamps: true },
 );
-
-module.exports = mongoose.model("Profile", profileSchema);
+// 🟢 The 3rd argument forces MongoDB to use a fresh collection, ignoring old broken indexes!
+module.exports = mongoose.model("Profile", profileSchema, "profiles_v2");
