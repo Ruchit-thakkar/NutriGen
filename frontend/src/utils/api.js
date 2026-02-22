@@ -2,7 +2,7 @@ import axios from "axios";
 
 const api = axios.create({
   // 🟢 NOW: Just the root URL as requested
-  baseURL: "http://localhost:3000",
+  baseURL: "https://nutrigen-khwj.onrender.com",
 
   // 🟢 CRITICAL: This ensures cookies are sent to the backend
   withCredentials: true,

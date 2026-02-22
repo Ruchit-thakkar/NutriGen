@@ -7,14 +7,14 @@ const authRoutes = require("./routes/auth.routes");
 require("dotenv").config();
 const cookieParser = require("cookie-parser");
 const dailyPlanRoutes = require("./routes/dailyPlan.routes");
-
+const path = require("path");
 // Connect the routes to the app
 app.use(cookieParser());
 app.use(
   cors({
     // 1. Check your frontend port!
     // Your error says "localhost:3000", so ensure this matches.
-    origin: ["http://localhost:5173", "http://localhost:3000"],
+    origin: ["http://localhost:5173", "https://nutrigen-khwj.onrender.com"],
 
     credentials: true,
 
@@ -24,6 +24,8 @@ app.use(
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.use(express.static(path.join(__dirname, "../public")));
 
 // --- Existing Routes ---
 app.use("/api/auth", authRoutes);
@@ -37,6 +39,10 @@ app.use("/api/user", require("./routes/user.routes"));
 // --- NEW NutriGen Routes ---
 app.use("/api/exercises", require("./routes/exercise.routes")); // 👈 Added Exercise routes
 app.use("/api/food", require("./routes/food.routes")); // 👈 Added Food routes
+
+app.get("*name", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/index.html"));
+});
 
 // 2. Connect it at the bottom with your other app.use statements
 module.exports = app;
