@@ -61,7 +61,7 @@ const Progress = () => {
     );
 
   return (
-    <div className="max-w-6xl mx-auto pb-24 pt-4 animate-in fade-in duration-700 relative z-10">
+    <div className="max-w-6xl mx-auto  pt-4 animate-in fade-in duration-700 relative z-10 pb-32">
       <div className="mb-10 mt-8 flex items-center gap-5">
         <div className="bg-white/60 backdrop-blur-xl p-4 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white">
           <TrendingUp className="text-teal-600" size={32} />

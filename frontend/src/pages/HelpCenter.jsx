@@ -86,8 +86,8 @@ const HelpCenter = () => {
   };
 
   return (
-    <div className="w-full h-full pt-8 pb-24 animate-in fade-in slide-in-from-bottom-4 duration-500 relative z-10">
-      <div className="bg-white/60 backdrop-blur-2xl p-8 md:p-12 rounded-[3rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white max-w-3xl mx-auto">
+    <div className="w-full h-full pt-8  animate-in fade-in slide-in-from-bottom-4 duration-500 relative z-10 pb-80">
+      <div className="bg-white/60 backdrop-blur-2xl p-8 pb-32 md:p-12  rounded-[3rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white max-w-3xl mx-auto">
         {/* Header */}
         <h3 className="text-3xl md:text-4xl font-black mb-8 text-slate-900 flex items-center gap-4 tracking-tight">
           <div className="bg-gradient-to-br from-teal-100 to-emerald-50 p-4 rounded-[1.5rem] shadow-inner border border-white">
@@ -140,7 +140,7 @@ const HelpCenter = () => {
               </details>
             ))}
 
-            <div className="mt-12 pt-10 border-t border-white/50 flex flex-col sm:flex-row items-center justify-between gap-6 bg-white/40 p-8 rounded-[2rem] border border-white/60">
+            <div className="mt-12 mb-20 pt-10 border-t border-white/50 flex flex-col sm:flex-row items-center justify-between gap-6 bg-white/40 p-8 rounded-[2rem] border border-white/60">
               <div>
                 <p className="text-slate-900 font-black text-xl tracking-tight">
                   Still need help?

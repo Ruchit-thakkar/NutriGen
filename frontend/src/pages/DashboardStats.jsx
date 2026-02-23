@@ -93,7 +93,7 @@ const DashboardStat = ({ setActiveTab }) => {
 
   if (loading) {
     return (
-      <div className="min-h-[70vh] flex flex-col justify-center items-center font-sans">
+      <div className="min-h-[70vh] flex flex-col justify-center items-center font-sans pb-32">
         <div className="bg-white/60 backdrop-blur-xl p-8 rounded-[2rem] border border-white shadow-xl flex flex-col items-center">
           <Loader2 className="animate-spin text-teal-500 mb-4" size={48} />
           <p className="text-slate-500 font-bold tracking-widest uppercase text-sm">
