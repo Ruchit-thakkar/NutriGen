@@ -50,7 +50,7 @@ const AdminGraphs = () => {
   const { totalUsers, graphs } = data;
 
   return (
-    <div className="space-y-8 mt-4 md:mt-8 animate-in fade-in slide-in-from-bottom-4 duration-500 pb-12">
+    <div className="space-y-8 pb-32 mt-4 md:mt-8 animate-in fade-in slide-in-from-bottom-4 duration-500 ">
       {/* 1️⃣ Page Header */}
       <div className="flex flex-col md:flex-row justify-between md:items-end gap-6">
         <div>

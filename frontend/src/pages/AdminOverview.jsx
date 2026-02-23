@@ -48,7 +48,7 @@ const AdminOverview = () => {
 
   if (isLoading || !data) {
     return (
-      <div className="h-[60vh] flex flex-col items-center justify-center animate-in fade-in duration-500">
+      <div className="h-[60vh] pb-32 flex flex-col items-center justify-center animate-in fade-in duration-500">
         <div className="bg-white/60 backdrop-blur-xl p-8 rounded-[2rem] border border-white shadow-sm flex flex-col items-center">
           <Loader2 className="animate-spin text-indigo-500 mb-4" size={40} />
           <p className="text-slate-500 font-bold tracking-widest uppercase text-sm">

@@ -201,7 +201,7 @@ const DailyPlan = () => {
   const { targets, actuals, consumedItems } = plan;
 
   return (
-    <div className="max-w-6xl mx-auto pb-24 pt-4 animate-in fade-in duration-700 relative z-10 pb-32">
+    <div className="max-w-6xl mx-auto pb-32 pt-4 animate-in fade-in duration-700 relative z-10 ">
       <h1 className="text-4xl font-black text-slate-900 tracking-tight mt-8 mb-10">
         Today's Plan
       </h1>

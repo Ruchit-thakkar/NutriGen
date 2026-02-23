@@ -110,7 +110,7 @@ const AdminUsers = () => {
   }
 
   return (
-    <div className="space-y-8 mt-4 md:mt-8 animate-in fade-in slide-in-from-bottom-4 duration-500 pb-12">
+    <div className="space-y-8 mt-4 pb-32 md:mt-8  animate-in fade-in slide-in-from-bottom-4 duration-500 pb-12">
       {/* 1️⃣ Page Header & Stats Summary */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="md:col-span-1 flex flex-col justify-center">

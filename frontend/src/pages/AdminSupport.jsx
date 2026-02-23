@@ -78,7 +78,7 @@ const AdminSupport = () => {
   }
 
   return (
-    <div className="space-y-8 mt-4 md:mt-8 animate-in fade-in slide-in-from-bottom-4 duration-500 pb-12 max-w-5xl mx-auto">
+    <div className="space-y-8  pb-32 mt-4 md:mt-8 animate-in fade-in slide-in-from-bottom-4 duration-500  max-w-5xl mx-auto">
       <div>
         <h2 className="text-3xl font-black text-slate-900 tracking-tight flex items-center gap-3">
           <div className="p-3 bg-indigo-50 rounded-xl text-indigo-600 border border-white shadow-sm">
