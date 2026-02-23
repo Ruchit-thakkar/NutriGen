@@ -110,7 +110,7 @@ const AdminDashboard = () => {
             </button>
           </header>
 
-          <main className="flex-1 mb-30 overflow-y-auto w-full p-4 md:p-8 pb-32 md:pb-8 scroll-smooth">
+          <main className="flex-1  overflow-y-auto w-full p-4 md:p-8 pb-32 md:pb-8 scroll-smooth">
             <div className="max-w-6xl mx-auto h-full animate-in fade-in slide-in-from-bottom-4 duration-500">
               {activeTab === "overview" && <AdminOverview />}
               {activeTab === "users" && <AdminUsers />}
