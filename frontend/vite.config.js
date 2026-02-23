@@ -10,23 +10,24 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: "autoUpdate",
-      // Ensure these exist in your /public folder!
       includeAssets: ["favicon.ico", "apple-touch-icon.png"],
       manifest: {
         name: "NutriGen",
         short_name: "NutriGen",
         description: "AI-Powered Nutrition & Fitness Tracker",
-        theme_color: "#0f172a", // Matches your slate-900 dark theme
-        background_color: "#f8fafc", // Matches your slate-50 background
-        display: "standalone", // Removes the browser URL bar
+        theme_color: "#0f172a",
+        background_color: "#f8fafc",
+        display: "standalone",
         orientation: "portrait",
         icons: [
           {
             src: "/icon-192x192.png",
+            sizes: "192x192", // 🟢 ADDED THIS
             type: "image/png",
           },
           {
             src: "/icon-512x512.png",
+            sizes: "512x512", // 🟢 ADDED THIS
             type: "image/png",
             purpose: "any maskable",
           },
